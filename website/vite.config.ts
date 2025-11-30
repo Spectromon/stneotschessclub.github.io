@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig(() => {
   return {
-    base: '/stneotschessclub.github.io/',
+    base: 'stneotschessclub.github.io',
     build: {
       outDir: 'build',
     },
