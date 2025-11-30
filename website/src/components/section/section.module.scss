@@ -1,0 +1,28 @@
+.Section {
+  flex: 1 1 auto;
+  text-align: left;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 4rem;
+}
+
+.SectionTitleContainer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 0.5rem;
+  padding: 1rem 0rem;
+  border-bottom: 1px solid var(--primary);
+}
+
+.Icon {
+  border-radius: 50px;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  background: var(--primary);
+  color: white;
+}

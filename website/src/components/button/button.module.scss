@@ -1,0 +1,30 @@
+.Button {
+  background: var(--primary);
+  color: white;
+  border-radius: 0.5rem;
+  padding: 1rem 1.5rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  &--primary {
+    border: 2px solid var(--primary);
+
+    background: var(--primary);
+    color: white;
+    filter: drop-shadow(8px 8px 8px rgba(0, 0, 0, 0.1));
+  }
+
+  &--secondary {
+    border: 2px solid var(--background);
+    background: var(--background);
+    color: var(--primary);
+  }
+}
+
+.Button:hover {
+  cursor: pointer;
+}
+
+.Button--secondary:hover {
+  border: 2px solid var(--primary);
+}

@@ -1,0 +1,40 @@
+.Container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.ButtonContainer {
+  gap: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.SectionButtonContainer {
+  gap: 0.5rem;
+  display: flex;
+
+  align-items: center;
+}
+
+.AddressContainer {
+  display: flex;
+
+  div {
+    flex: 1 1 auto;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+  }
+}
+
+.MapContainer{
+    flex: 1 1 auto;
+}
+
+@media (max-width: 780px) {
+  .AddressContainer {
+    flex-flow: column;
+  }
+}

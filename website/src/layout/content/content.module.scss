@@ -1,0 +1,18 @@
+.Container {
+  display: flex;
+  flex-flow: column;
+  position: relative;
+}
+
+.Main {
+  display: flex;
+  justify-content: center;
+}
+
+.Content {
+  background: var(--background);
+  min-height: calc(100vh - 64px);
+  max-width: 1440px;
+  width: 100%;
+  padding: 0 0.5rem;
+}

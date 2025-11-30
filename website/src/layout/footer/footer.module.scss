@@ -1,0 +1,17 @@
+.Container {
+    position: static;
+    bottom: 0;
+    grid-row-gap: 30px;
+    grid-column-gap: max(1%, 20px);
+    display: grid;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(min(25%, max(300px, 16.6666666667%)), 300px)
+    );
+    justify-content: space-evenly;
+    padding:25px;
+    align-items: center;
+    color: var(--foreground);
+    background: color-mix(in srgb, var(--background), var(--foreground) 2.5%);
+  }
+  
