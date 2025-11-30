@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://spectromon.github.io/stneotschessclub.github.io",
   "scripts": {
     "start": "vite",
     "build": "tsc -b && vite build",
@@ -37,8 +38,5 @@
     "typescript": "~5.9.3",
     "typescript-eslint": "^8.46.4",
     "vite": "^7.2.4"
-  },
-  "properties": {
-    "homepage": "https://spectromon.github.io/stneotschessclub.github.io"
   }
 }
