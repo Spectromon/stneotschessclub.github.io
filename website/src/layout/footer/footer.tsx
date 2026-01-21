@@ -6,7 +6,7 @@ function Footer() {
   return (
     <footer className={classes.Container}>
       <FontAwesomeIcon icon={"copyright"} />
-      <p>St. Neots Chess Club 2025 </p>
+      <p>St. Neots Chess Club 2026 </p>
       <p>Released under the MIT License</p>
     </footer>
   );

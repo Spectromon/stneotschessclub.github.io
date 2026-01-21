@@ -10,12 +10,24 @@ function Policy() {
 
   return (
     <div className={classes.Container}>
-      <IntroSection introSectionTitle="Our Policy Documents"  showGraphic={false}>
-        <p>We regularly review our policy documents and these are subject to change at short notice</p>
-          <Button onClick={()=>{navigate("/contact")}}>Get In Touch</Button>
-
+      <IntroSection
+        introSectionTitle="Our Policy Documents"
+        showGraphic={false}
+      >
+        <p>
+          Our policies are currently being updated and we hope to make them
+          available shortly. If you have a question about our policies, please
+          don't hesitate to get in touch
+        </p>
+        <Button
+          onClick={() => {
+            navigate("/contact");
+          }}
+        >
+          Get In Touch
+        </Button>
       </IntroSection>
-      <Section sectionTitle="Safeguarding Document">
+      {/* <Section sectionTitle="Safeguarding Document">
         <p>
           Reviewed on 19/08/25
         </p>
@@ -26,7 +38,7 @@ function Policy() {
           Reviewed on 19/08/25
         </p>
           <Button onClick={()=>{}}>Download</Button>
-      </Section>
+      </Section> */}
     </div>
   );
 }

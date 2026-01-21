@@ -19,7 +19,11 @@ function Button({
     .filter(Boolean)
     .join(" ");
   return (
-    <button className={buttonClasses} onClick={onClick}>
+    <button
+      className={buttonClasses}
+      aria-labelledby="button-label"
+      onClick={onClick}
+    >
       {children}
     </button>
   );

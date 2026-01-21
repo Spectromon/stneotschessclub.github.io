@@ -12,14 +12,16 @@ function Header() {
   return (
     <header className={classes.Header}>
       <div className={classes.Container}>
-      <div className={classes.Content}>
-        <div className={classes.TitleContainer}>
-          <div className={classes.Icon}>
-            <FontAwesomeIcon icon={"chess-king"} />
+        <div className={classes.Content}>
+          <div className={classes.TitleContainer}>
+            <div className={classes.Icon}>
+              <FontAwesomeIcon icon={"chess-king"} />
+            </div>
+            <Title level={TitleLevel.H1} colour={"var(--primary)"}>
+              St Neots Chess Club
+            </Title>
           </div>
-          <Title level={TitleLevel.H1} colour={"var(--primary)"}>St Neots Chess Club</Title>
-        </div>
-        {/* <div className={classes.TitleContainer}>
+          {/* <div className={classes.TitleContainer}>
           <Link className={classes.Link} to="/">
             Home
           </Link>
@@ -36,13 +38,21 @@ function Header() {
             Contact
           </Link>
         </div> */}
-        <Button onClick={() => setIsOpen(!isOpen)}>
-          {isOpen ? <FontAwesomeIcon icon={"times"} /> : <FontAwesomeIcon icon={"bars"} />}
-        </Button>
+          <Button onClick={() => setIsOpen(!isOpen)}>
+            <span id="button-label" hidden>
+              Menu
+            </span>
+            {isOpen ? (
+              <FontAwesomeIcon icon={"times"} />
+            ) : (
+              <FontAwesomeIcon icon={"bars"} />
+            )}
+          </Button>
+        </div>
       </div>
-      </div>
-      {isOpen && <div className={classes.MobileLinksContainer}>
-                  <Link className={classes.Link} to="/">
+      {isOpen && (
+        <div className={classes.MobileLinksContainer}>
+          <Link className={classes.Link} to="/">
             Home
           </Link>
           <Link className={classes.Link} to="/about">
@@ -57,7 +67,8 @@ function Header() {
           <Link className={classes.Link} to="/contact">
             Contact
           </Link>
-      </div>}
+        </div>
+      )}
     </header>
   );
 }

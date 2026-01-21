@@ -9,10 +9,18 @@ function Competition() {
 
   return (
     <div className={classes.Container}>
-      <IntroSection introSectionTitle="Competitions"  showGraphic={false}>
-        <p>We participate in a number of competitions in and around the county.</p>
-          <Button onClick={()=>{navigate("/contact")}}>Get In Touch</Button>
-
+      <IntroSection introSectionTitle="Competitions" showGraphic={false}>
+        <p>
+          We participate in a number of competitions in and around the county.
+        </p>
+        <p> This page is currently being updated for the 2025/2026 season.</p>
+        <Button
+          onClick={() => {
+            navigate("/contact");
+          }}
+        >
+          Get In Touch
+        </Button>
       </IntroSection>
     </div>
   );
