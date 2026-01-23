@@ -1,7 +1,7 @@
 import React from "react";
 import Button from "../../components/button/button";
 import IntroSection from "../../components/introSection/introSection";
-import Section from "../../components/section/section";
+// import Section from "../../components/section/section";
 import { useNavigate } from "react-router";
 import classes from "./policy.module.scss";
 

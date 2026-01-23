@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://spectromon.github.io/stneotschessclub.github.io",
+  "homepage": ".",
   "scripts": {
     "start": "vite",
     "build": "tsc -b && vite build",
